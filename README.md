@@ -7,3 +7,8 @@ Integrantes del Grupo:
 - GAVIDIA DIAZ, XAVIER ARMANDO
 - PALACIOS TUEROS, ALEXIA GABRIELA
 - HANCCO BASILIO, HUGO ALEJANDRO
+
+Informe Final:
+https://docs.google.com/document/d/1R8RjNH6DS8XlTatYxGAP9RGx7HL3WMx2XamQahfp6E0/edit?usp=sharing
+
+PPT LAB7:
