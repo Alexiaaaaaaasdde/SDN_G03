@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cursos Inscritos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container mt-4">
+    <h2>Cursos inscritos de {{ usuario.names }} {{ usuario.lastnames }}</h2>
+    <p><strong>Usuario:</strong> {{ usuario.username }} | <strong>Rol:</strong> {{ usuario.rolname }}</p>
+
+    {% if cursos %}
+        <ul class="list-group">
+            {% for curso in cursos %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    ID: {{ curso.idcurso }} - {{ curso.nombre }}
+                    <span class="badge bg-{{ 'success' if curso.estado == 'activo' else 'secondary' }}">
+                        {{ curso.estado.capitalize() }}
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No estás inscrito en ningún curso activo.</p>
+    {% endif %}
+</div>
+</body>
+</html>
